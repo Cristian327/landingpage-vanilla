@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weware</title>
 
     <link rel="stylesheet" href="app.js">
 
@@ -44,6 +44,8 @@
         <div x-data="{ open: false }"
             class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="p-4 flex flex-row items-center justify-between">
+                <img src="assets/icons/Imagotype.png" alt="Imagotype" />
+
                 <a href="#"
                     class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Weware</a>
                 <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -59,18 +61,15 @@
             </div>
             <nav :class="{'flex': open, 'hidden': !open}"
                 class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Community</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#">Blog</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Portfolio</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">About</a>
-                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#">Contact</a>
                 <div @click.away="open = false" class="relative" x-data="{ open: false }">
                     <button @click="open = !open"
-                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                        <span>Dropdown</span>
+                        class="flex flex-row border border-bermuda items-center w-full px-4 py-2 mt-2 text-sm font-semibold  text-left bg-transparent rounded-lg text-bermuda dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Get early Access</span>
                         <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                             class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                             <path fill-rule="evenodd"
@@ -109,41 +108,46 @@
                 <div class="justify-center px-6 my-12">
                     <div class="w-full xl:w-4/4 lg:w-11/12">
                         <div class="px-14 mb-4 text-center text-midnight -pt-40 font-bold">
-                            <h5 class="text-4xl md:text-7xl mt-8 inline-flex pb-4	">
+                            <h5 class="text-4xl md:text-7xl mt-8 inline-flex pb-4">
                                 Bring <br />
                                 <figure
                                     class="w-10 md:ml-14 h-10 md:w-20 md:h-20 rounded-full bg-bubble-gum content-center ">
-                                    <img src="assets/icons/Arrow 1.png" class="mt-1  md:mt-5 md:ml-4" alt="" />
+                                    <img src="assets/icons/Arrow 1.png" class="mt-1 md:mt-5 md:ml-4" alt="" />
                                 </figure>
                                 <div
-                                    class="h-10 lg:w-96 xl:w-48 md:h-20 rounded-full shadow-lg bg-gradient-to-r from-midnight to-lineargradient">
+                                    class="h-10 lg:w-96 xl:w-48 md:h-20 rounded-full shadow-lg bg-gradient-to-r from-transparent to-bubble-gum">
                                     <div
-                                        class="h-10 lg:w-44 md:h-20 xl:w-3/5 w-3/5  rounded-full shadow-lg  bg-gradient-to-r from-midnight to-lineargradient">
+                                        class="h-10 lg:w-3/5 md:h-20 xl:w-3/5 w-3/5  rounded-full shadow-lg  bg-gradient-to-r from-bermuda to-transparent">
                                         <img src="assets/icons/heart.png" alt="" class="ml-20 md:ml-28 h-10 md:h-20" />
                                     </div>
                                 </div>
                             </h5>
                             <h5 class="md:mt-10 pb-1 text-4xl md:text-7xl ">
-                                <img src="assets/icons/Ellipse 7.png" alt="" class="-mb-16	ml-36 hidden md:block" />
+                                <img src="assets/icons/Ellipse 7.png" alt="" class="-mb-16 ml-36 hidden md:block" />
                                 <img src="assets/icons/Vector 8.png" alt=""
                                     class="-mb-32 hidden md:block pl-44 mt-5 " />
-                                <img src="assets/icons/VectorMobile.png" alt="" class="-mb-16 md:hidden mt-5 " />
-                                Your Remote <br />
+                                <img src="assets/icons/VectorMobile.png" alt="" class="-mb-16 md:hidden mt-5" />
+                                your remote <br />
                             </h5>
                             <div class="float-right hidden md:block  ">
                                 <div
-                                    class="w-52 h-20 -my-16 rounded-full md:shadow-lg bg-gradient-to-r from-midnight to-lineargradient pb-1	">
+                                    class="w-52 h-20 -my-16 rounded-full md:shadow-lg bg-gradient-to-r from-white to-white pb-1">
                                     <div
-                                        class="w-3/5 h-20 rounded-full md:shadow-lg bg-gradient-to-r from-midnight to-lineargradient z-50 ">
+                                        class="w-3/5 h-20 rounded-full md:shadow-lg bg-gradient-to-r from-bubble-gum to-transparent">
+
                                         <img src="assets/icons/emoji.png" alt=""
                                             class="-my-2 ml-20 pt-2 hidden md:block" />
                                     </div>
                                 </div>
                             </div>
-                            <h5 class="mt-8 md:pl-40 text-4xl md:text-7xl">
+                            <h5 class="mt-8 md:pl-40 text-4xl md:text-7xl ">
                                 <img src="assets/icons/Ellipse 10.png" alt="" class="-mb-16	ml-36 hidden md:block" />
-                                Team Togheter
+                                team togheter
                             </h5>
+                            <div class="flex justify-around">
+                                <img src="assets/icons/orange-star.png" alt="orange-star" />
+                                <img src="assets/icons/blue-star.png" alt="blue-star" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,7 +202,7 @@
                     <img src="assets/icons/Add topics.png" alt="" class="hidden md:block" />
 
                     <a href="#"
-                        class="min-w-fit sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+                        class="min-w-fit sm:w-auto flex focus:ring-4rounded-lg  items-center justify-center px-4 py-2.5">
                         <img src="assets/img/Screenpage.png" alt="" />
                     </a>
                     <img src="assets/icons/Activate .png" alt="" class="hidden md:block" />
@@ -287,8 +291,8 @@
                 </div>
             </figure>
 
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4  items-center  md:mb-40">
-                <div class="md:pr-12">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 items-center md:mb-40">
+                <div class="md:pr-16">
                     <div class=" inline-flex items-center justify-center w-16 h-16 mb-6 mt-8 ">
                         <img src="assets/icons/star-green.png" alt="" class="mr-48" />
                     </div>
@@ -306,7 +310,7 @@
 
         <!-- Aside left text and right image  -->
 
-        <div class="flex flex-col-reverse md:flex md:flex-row align-middle ">
+        <div class="flex flex-col-reverse md:w-11/12 md:flex md:flex-row align-middle ">
             <div class="w-full md:w-3/12  mr-auto px-4 items-center  md:ml-40 ">
                 <div class="md:pr-1">
                     <h3 class="text-3xl font-semibold  text-midnight text-center md:text-left">
@@ -335,7 +339,7 @@
 
         <!-- Aside right text and left image  -->
 
-        <div class="items-center flex flex-wrap align-middle ">
+        <div class="items-center  flex flex-wrap align-middle ">
             <figure class="md:flex">
                 <div class=" w-38 md:w-48 h-16 ">
                     <img src="assets/img/chat.png" class=" md:ml-40 z-10 " />
@@ -365,7 +369,7 @@
         <!-- Aside left text and right image -->
 
 
-        <div class="flex flex-col-reverse md:flex md:flex-row align-middle ">
+        <div class="flex flex-col-reverse md:flex md:flex-row md:w-11/12 align-middle ">
             <div class="w-full md:w-3/12  mr-auto px-4 items-center  md:ml-40 ">
                 <div class="md:pr-1">
                     <h3 class="text-3xl font-semibold  text-midnight text-center md:text-left">
@@ -437,7 +441,7 @@
                             Interested in early access? Join the waitlist
                         </p>
                         <h1 class="text-xl mt-2 text-center font-semibold ">
-                            (releasing Q1 2022){" "}
+                            (releasing Q1 2022)
                         </h1>
                         <div class="mt-6 flex space-x-4 m-10 justify-center">
                             <input placeholder="write her..." class=" rounded-md py-2 px-4 border-2 outline-none" />
@@ -452,7 +456,7 @@
     </section>
 
 
-    <!-- FAQ -->
+    <!-- FAQ ACCORDEON -->
 
 
     <section>
@@ -468,7 +472,7 @@
                         class="flex items-center focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 justify-between p-5 w-full font-medium text-left border-borderfaq border-t-2  dark:border-gray-700  text-gray-900 dark:text-white "
                         data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                         aria-controls="accordion-collapse-body-1">
-                        <span>What is Flowbite?</span>
+                        <span>Main</span>
                         <svg data-accordion-icon class="w-6 h-6 shrink-0 rotate-180" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -480,16 +484,16 @@
                 <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1">
                     <div class="p-5 border-borderfaq border-t-2">
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
-                            Flowbite is an open-source library of interactive components
-                            built on top of Tailwind CSS including buttons, dropdowns,
-                            modals, navbars, and more.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non bibendum accumsan lacus justo
+                            venenatis morbi aliquet quisque sapien. Scelerisque habitant felis sit mi. Justo gravida leo
+                            non bibendum accumsan lacus justo venenatis morbi aliquet quisque sapien.
                         </p>
                         <p class="text-gray-500 dark:text-gray-400">
-                            Check out this guide to learn how to{" "}
+                            Check out this guide to learn how to
                             <a href="https://flowbite.com/docs/getting-started/introduction/" target="_blank"
                                 class="text-blue-600 dark:text-blue-500 hover:underline">
                                 get started
-                            </a>{" "}
+                            </a>
                             and start developing websites even faster with components on top
                             of Tailwind CSS.
                         </p>
@@ -500,7 +504,7 @@
                         class="flex items-center focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 justify-between p-5 w-full font-medium border-borderfaq border-t-2 text-left  hover:bg-gray-100 "
                         data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
                         aria-controls="accordion-collapse-body-2">
-                        <span>Is there a Figma file available?</span>
+                        <span>Main</span>
                         <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -512,12 +516,12 @@
                 <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                     <div class="p-5 border border-borderfaq border-b-0">
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
-                            Flowbite is first conceptualized and designed using the Figma
-                            software so everything you see in the library has a design
-                            equivalent in our Figma file.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non bibendum accumsan lacus justo
+                            venenatis morbi aliquet quisque sapien. Scelerisque habitant felis sit mi. Justo gravida leo
+                            non bibendum accumsan lacus justo venenatis morbi aliquet quisque sapien.
                         </p>
                         <p class="text-gray-500 dark:text-gray-400">
-                            Check out the{" "}
+                            Check out the
                             <a href="https://flowbite.com/figma/" target="_blank"
                                 class="text-blue-600 dark:text-blue-500 hover:underline">
                                 Figma design system
@@ -533,7 +537,7 @@
                         data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                         aria-controls="accordion-collapse-body-3">
                         <span>
-                            What are the differences between Flowbite and Tailwind UI?
+                            Main
                         </span>
                         <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -546,16 +550,14 @@
                 <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                     <div class="p-5  border border-borderfaq dark:border-gray-700 border-t-0">
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
-                            The main difference is that the core components from Flowbite
-                            are open source under the MIT license, whereas Tailwind UI is a
-                            paid product. Another difference is that Flowbite relies on
-                            smaller and standalone components, whereas Tailwind UI offers
-                            sections of pages.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non bibendum accumsan lacus justo
+                            venenatis morbi aliquet quisque sapien. Scelerisque habitant felis sit mi. Justo gravida leo
+                            non bibendum accumsan lacus justo venenatis morbi aliquet quisque sapien.
                         </p>
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
-                            However, we actually recommend using both Flowbite, Flowbite
-                            Pro, and even Tailwind UI as there is no technical reason
-                            stopping you from using the best of two worlds.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non bibendum accumsan lacus justo
+                            venenatis morbi aliquet quisque sapien. Scelerisque habitant felis sit mi. Justo gravida leo
+                            non bibendum accumsan lacus justo venenatis morbi aliquet quisque sapien.
                         </p>
                         <p class="mb-2 text-gray-500 dark:text-gray-400">
                             Learn more about these technologies:
@@ -578,8 +580,132 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+
     </section>
 
+
+    <!-- FORM BEFORE FOOTER -->
+
+
+    <section class="block text-center md:flex md:text-left mb-10">
+        <div class="items-center align-middle ">
+            <div class="w-full md:w-10/12  mr-auto px-4 items-center md:ml-40 ">
+                <div class="md:pr-1">
+                    <h3 class="font-semibold text-xl  text-midnight">
+                        Sign up for product updates:
+                    </h3>
+                    <p class="mt-4 text-lg leading-relaxed text-midnight">
+                        Ullamcorper orci, eu venenatis ac euismod vel purus tortor
+                        rhoncus mauri.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <form class="w-full h-3/4 bg-white rounded items-center align-middle md:mt-10">
+            <div class="container mx-auto">
+                <div class="flex justify-center text-center">
+                    <div class="w-2/4 md:w-3/4 lg:w-10/12">
+                        <span class=" mb-2 text-2xl">
+                            <input
+                                class=" px-7 py-2 text-sm leading-tight text-midnight border  rounded-lg shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="email" type="email" placeholder="Your mail address" />
+                            <span class="bg-bermuda px-7 py-2 text-sm  border text-white ml-10 rounded-lg">
+                                Get early access
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+
+
+    <footer>
+        <div class="bg-white">
+            <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">
+                        Home
+                    </div>
+                    <a class="my-3 block" href="/#">
+                        Services <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Products <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        About Us <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Pricing <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Partners <span class="text-teal-600 text-xs p-1">New</span>
+                    </a>
+                </div>
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">
+                        User
+                    </div>
+                    <a class="my-3 block" href="/#">
+                        Sign in <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        New Account <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Demo <span class="text-teal-600 text-xs p-1">New</span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Career
+                        <span class="text-teal-600 text-xs p-1">We're hiring</span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Surveys <span class="text-teal-600 text-xs p-1">New</span>
+                    </a>
+                </div>
+
+                <div class="p-5 w-48 ">
+                    <div class="text-xs uppercase text-gray-500 font-medium">
+                        Support
+                    </div>
+                    <a class="my-3 block" href="/#">
+                        Help Center <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Privacy Policy
+                        <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        Conditions <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                </div>
+                <div class="p-5 w-48 md:ml-64">
+                    <div class="text-xs uppercase text-gray-500 font-medium">
+                        Contact us
+                    </div>
+                    <a class="my-3 block" href="/#">
+                        XXX XXXX, Floor 4 San Francisco, CA
+                        <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                    <a class="my-3 block" href="/#">
+                        contact@company.com
+                        <span class="text-teal-600 text-xs p-1"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white pt-2 ">
+            <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
+      md:flex-row max-w-6xl">
+                <div class="mt-2">© 2021 Weware Co. Built with 💙 by</div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
